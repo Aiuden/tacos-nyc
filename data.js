@@ -8,7 +8,40 @@ const TACOS = [
     toppings: 5.0,
     store: 5.0,
     overall: 5.0,
-    notes: ""
+    notes: "Get one of everything and abuse that topping bar. These taste like they were airlifted out of Mexico City."
+  },
+  {
+    name: "Carnitas Ramirez",
+    neighborhood: "East Village",
+    address: "210 E 3rd St, New York, NY 10009",
+    mapsUrl: "https://www.google.com/maps/place/Carnitas+Ramirez/@40.7225162,-73.9828428,17z/",
+    taco: 5.0,
+    toppings: 5.0,
+    store: 5.0,
+    overall: 5.0,
+    notes: "Try a new type every time. But always get the Surtida. And say it with me class, abuse that topping bar."
+  },
+  {
+    name: "El Lado Taco",
+    neighborhood: "Astoria",
+    address: "34-14 30th Ave, Astoria, NY 11103",
+    mapsUrl: "https://www.google.com/maps/place/El+Lado+Taco/@40.7713,-73.9299,17z/",
+    taco: 5.0,
+    toppings: 5.0,
+    store: 5.0,
+    overall: 5.0,
+    notes: "Top of the line breakfast tacos with flour tortillas that haunt my dreams. The BEC taco has the most delightfully chunky bacon bits imaginable."
+  },
+  {
+    name: "Yellow Rose",
+    neighborhood: "East Village",
+    address: "102 3rd Ave, New York, NY 10003",
+    mapsUrl: "https://www.google.com/maps/place/Yellow+Rose/@40.7325244,-73.9880132,17z/",
+    taco: 5.0,
+    toppings: 5.0,
+    store: 5.0,
+    overall: 5.0,
+    notes: "They may have made a blood sacrifice to achieve this exact tortilla texture. Bean and cheese would singlehandedly cure my marital strife."
   },
   {
     name: "LOS TACOS No. 1",
@@ -19,7 +52,116 @@ const TACOS = [
     toppings: 5.0,
     store: 5.0,
     overall: 5.0,
-    notes: ""
+    notes: "Supremely reliable. Quesadilla is a banger. Breakfast burritos also a banger."
+  },
+  {
+    name: "Esse Taco",
+    neighborhood: "Williamsburg",
+    address: "219 Bedford Ave, Brooklyn, NY 11211",
+    mapsUrl: "https://www.google.com/maps/place/Esse+Taco/@40.7175,-73.9577,17z/",
+    taco: 5.0,
+    toppings: 5.0,
+    store: 5.0,
+    overall: 5.0,
+    notes: "I've come around on these guys. Ribeye just makes sense and the carnitas pack a punch. I'm increasingly getting a larger and larger share of my order Gringa style."
+  },
+  {
+    name: "Birria-Landia",
+    neighborhood: "Jackson Heights",
+    address: "77-99 Roosevelt Ave, Jackson Heights, NY 11372",
+    mapsUrl: "https://www.google.com/maps/place/Birria-Landia/@40.7474073,-73.8884264,17z/",
+    taco: 5.0,
+    toppings: 5.0,
+    store: 5.0,
+    overall: 5.0,
+    notes: "Don't overthink it, get the quesabirria with a side of consome. What are you, stupid? Eating these stupid drunk yields major bonus points."
+  },
+  {
+    name: "Rey de Reyes",
+    neighborhood: "Greenpoint",
+    address: "898 Lorimer St, Brooklyn, NY 11222",
+    mapsUrl: "https://www.google.com/maps/place/Rey+de+Reyes+Food+Truck/@40.7244,-73.9508,17z/",
+    taco: 5.0,
+    toppings: 5.0,
+    store: 5.0,
+    overall: 5.0,
+    notes: "The platonic ideal of a street taco. Thinking about the steak taco makes my mouth water. Very tactically positioned between the L stop and my house, and open very late."
+  },
+  {
+    name: "Santo Taco",
+    neighborhood: "Nolita",
+    address: "114 Kenmare St, New York, NY 10012",
+    mapsUrl: "https://www.google.com/maps/place/Santo+Taco/@40.7204,-73.9970,17z/",
+    taco: 5.0,
+    toppings: 5.0,
+    store: 5.0,
+    overall: 5.0,
+    notes: "They're def cooking something here. The steak taco is really unique and crispy and the right amount of juicy. Brand new so we'll see what else they get up to."
+  },
+  {
+    name: "Blue Light Speak Cheesy",
+    neighborhood: "Greenpoint",
+    address: "158 Green St, Brooklyn, NY 11222",
+    mapsUrl: "https://www.google.com/maps/place/The+Blue+Light+Speak+Cheesy/@40.7308,-73.9567,17z/",
+    taco: 5.0,
+    toppings: 5.0,
+    store: 5.0,
+    overall: 5.0,
+    notes: "Crunchy + soft tortillas and a buncha flavors that all work beautifully together. Sad it's only available on Wednesdays. But the breakfast taco boom continues."
+  },
+  {
+    name: "Los Mariscos",
+    neighborhood: "Chelsea",
+    address: "409 W 15th St, New York, NY 10011",
+    mapsUrl: "https://www.google.com/maps/place/Los+Mariscos/@40.7426,-74.0043,17z/",
+    taco: 5.0,
+    toppings: 5.0,
+    store: 5.0,
+    overall: 5.0,
+    notes: "A little small, but if you're in the mood for seafood you can count on them to deliver."
+  },
+  {
+    name: "El Chato",
+    neighborhood: "Greenpoint",
+    address: "620 Manhattan Ave, Brooklyn, NY 11222",
+    mapsUrl: "https://www.google.com/maps/place/Taqueria+El+Chato/@40.7246,-73.9516,17z/",
+    taco: 5.0,
+    toppings: 5.0,
+    store: 5.0,
+    overall: 5.0,
+    notes: "The trompo is hilariously juicy. By far the most logistically challenging bite on this list, but it's an admirable symphony of meaty goodness when you pay the price."
+  },
+  {
+    name: "Taqueria Gramercy",
+    neighborhood: "Gramercy",
+    address: "218 3rd Ave, New York, NY 10003",
+    mapsUrl: "https://www.google.com/maps/place/Taqueria+Gramercy/@40.7379,-73.9840,17z/",
+    taco: 5.0,
+    toppings: 5.0,
+    store: 5.0,
+    overall: 5.0,
+    notes: "Juicy, greasy, reliable. They take good care of you here."
+  },
+  {
+    name: "Super Burrito",
+    neighborhood: "West Village",
+    address: "169 Bleecker St, New York, NY 10012",
+    mapsUrl: "https://www.google.com/maps/place/Super+Burrito/@40.7279,-74.0013,17z/",
+    taco: 5.0,
+    toppings: 5.0,
+    store: 5.0,
+    overall: 5.0,
+    notes: "It's in the name, get a burrito instead."
+  },
+  {
+    name: "Tacombi",
+    neighborhood: "Nolita",
+    address: "267 Elizabeth St, New York, NY 10012",
+    mapsUrl: "https://www.google.com/maps/place/Tacombi/@40.7222,-73.9944,17z/",
+    taco: 5.0,
+    toppings: 5.0,
+    store: 5.0,
+    overall: 5.0,
+    notes: "If you REALLY need a taco this will do. Old heads who scoff at NYC's Mexican offerings may find this suitable. But you can do a lot better in today's taco renaissance."
   },
 ];
-
