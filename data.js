@@ -56,7 +56,7 @@ const TACOS = [
     mapsUrl: "https://www.google.com/maps/place/Esse+Taco/@40.7175,-73.9577,17z/",
     taco: 3.8,
     toppings: 4.2,
-    store: 5.0,
+    store: 4.0,
     notes: "I've come around on these guys. Ribeye just makes sense and the carnitas pack a punch. I'm increasingly getting a larger and larger share of my order Gringa style."
   },
   {
@@ -76,7 +76,7 @@ const TACOS = [
     mapsUrl: "https://www.google.com/maps/place/Rey+de+Reyes+Food+Truck/@40.7244,-73.9508,17z/",
     taco: 3.6,
     toppings: 2.5,
-    store: 5.0,
+    store: 3.3,
     notes: "The platonic ideal of a street taco. Thinking about the steak taco makes my mouth water. Very tactically positioned between the L stop and my house, and open very late."
   },
   {
@@ -85,8 +85,8 @@ const TACOS = [
     address: "114 Kenmare St, New York, NY 10012",
     mapsUrl: "https://www.google.com/maps/place/Santo+Taco/@40.7204,-73.9970,17z/",
     taco: 3.1,
-    toppings: 5.0,
-    store: 5.0,
+    toppings: 4.0,
+    store: 3.8,
     notes: "They're def cooking something here. The steak taco is really unique and crispy and the right amount of juicy. Brand new so we'll see what else they get up to."
   },
   {
@@ -108,6 +108,16 @@ const TACOS = [
     toppings: 2.0,
     store: 2.3,
     notes: "A little small, but if you're in the mood for seafood you can count on them to deliver."
+  },
+  {
+    name: "Mariscos el Submarino",
+    neighborhood: "Greenpoint",
+    address: "409 W 15th St, New York, NY 10011",
+    mapsUrl: "https://www.google.com/maps/place/Los+Mariscos/@40.7426,-74.0043,17z/",
+    taco: 3.9,
+    toppings: 3.8,
+    store: 4.3,
+    notes: "In the wake of Ensenada's closing, this is an admirable stand-in. The shrimp and kraken tacos are both delightful, but you can't help but feel they're overshadowed a bit by the aguachiles. Toppings offered are literally just tostadas and approximately two dozen hot sauce variants, but it works."
   },
   {
     name: "El Chato",
