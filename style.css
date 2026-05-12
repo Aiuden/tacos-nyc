@@ -456,6 +456,16 @@ td.score-cell {
 .map-popup-score-label { color: #89633e; }
 .map-popup-score-val   { font-weight: 700; color: #5a3e28; }
 
+.map-popup-notes {
+  font-size: 0.75rem;
+  color: #5a7aaa;
+  font-style: italic;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  border-top: 1px solid #d0dff0;
+  padding-top: 6px;
+}
+
 .map-popup-link {
   display: block;
   text-align: center;

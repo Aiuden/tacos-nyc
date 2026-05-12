@@ -5,8 +5,8 @@ const TACOS = [
     address: "94 Franklin St, Brooklyn, NY 11222",
     mapsUrl: "https://www.google.com/maps/place/Taqueria+Ramirez/@40.7278729,-73.9569589,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2598a60020f0f:0xad4c6da40d90f29b!8m2!3d40.7278729!4d-73.9569589!16s%2Fg%2F11rt7mr1s4",
     taco: 5.0,
-    toppings: 4.5,
-    store: 4.7,
+    toppings: 4.6,
+    store: 4.8,
     notes: "Get one of everything and abuse that topping bar. These taste like they were airlifted out of Mexico City. Store is cute and compact, a little small, but you get a front-row seat to the magic going on in that kitchen. Honestly so much clout that they don't do takeout."
   },
   {
@@ -14,9 +14,9 @@ const TACOS = [
     neighborhood: "East Village",
     address: "210 E 3rd St, New York, NY 10009",
     mapsUrl: "https://www.google.com/maps/place/Carnitas+Ramirez/@40.7225162,-73.9828428,17z/",
-    taco: 4.8,
-    toppings: 4.7,
-    store: 4.9,
+    taco: 4.7,
+    toppings: 4.9,
+    store: 4.3,
     notes: "Try a new type every time. But always get the Surtida. And say it with me class, abuse that topping bar. Especially that salsa verde. Gorgeous bit of work there."
   },
   {
@@ -24,9 +24,9 @@ const TACOS = [
     neighborhood: "Astoria",
     address: "34-14 30th Ave, Astoria, NY 11103",
     mapsUrl: "https://www.google.com/maps/place/El+Lado+Taco/@40.7713,-73.9299,17z/",
-    taco: 4.0,
-    toppings: 2.5,
-    store: 4.0,
+    taco: 4.2,
+    toppings: 3.5,
+    store: 3.8,
     notes: "Top of the line breakfast tacos with flour tortillas that haunt my dreams. The BEC taco has the most delightfully chunky bacon bits imaginable."
   },
   {

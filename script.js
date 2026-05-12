@@ -1,3 +1,9 @@
+// ===== COMPUTE OVERALL =====
+// Always derive overall from the three scores so it stays in sync
+TACOS.forEach(t => {
+  t.overall = Math.round(((t.taco + t.toppings + t.store) / 3) * 10) / 10;
+});
+
 // ===== SORT STATE =====
 let sortCol = 'overall';
 let sortDir = 'desc';
@@ -119,11 +125,12 @@ function initMap() {
             <span class="map-popup-score-label">Store</span>
             <span class="map-popup-score-val">${t.store.toFixed(1)}</span>
           </div>
-          <div class="map-popup-score-row">
-            <span class="map-popup-score-label">Overall</span>
-            <span class="map-popup-score-val">${t.overall.toFixed(1)}</span>
+          <div class="map-popup-score-row overall-row">
+            <span class="map-popup-score-label"><strong>Overall</strong></span>
+            <span class="map-popup-score-val"><strong>${t.overall.toFixed(1)}</strong></span>
           </div>
         </div>
+        ${t.notes ? `<div class="map-popup-notes">${t.notes}</div>` : ''}
         ${t.mapsUrl ? `<a class="map-popup-link" href="${t.mapsUrl}" target="_blank" rel="noopener">Open in Google Maps</a>` : ''}
       </div>`;
     L.marker([t.lat, t.lng], { icon }).addTo(map).bindPopup(popup);
