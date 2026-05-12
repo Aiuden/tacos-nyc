@@ -115,8 +115,8 @@ const TACOS = [
     address: "620 Manhattan Ave, Brooklyn, NY 11222",
     mapsUrl: "https://www.google.com/maps/place/Taqueria+El+Chato/@40.7246,-73.9516,17z/",
     taco: 3.2,
-    toppings: 5.0,
-    store: 5.0,
+    toppings: 4.3,
+    store: 2.2,
     notes: "The trompo is hilariously juicy. By far the most logistically challenging bite on this list, but it's an admirable symphony of meaty goodness when you pay the price."
   },
   {
@@ -124,8 +124,8 @@ const TACOS = [
     neighborhood: "Gramercy",
     address: "218 3rd Ave, New York, NY 10003",
     mapsUrl: "https://www.google.com/maps/place/Taqueria+Gramercy/@40.7379,-73.9840,17z/",
-    taco: 3.0,
-    toppings: 5.0,
+    taco: 3.2,
+    toppings: 3.0,
     store: 3.7,
     notes: "Juicy, greasy, reliable. They take good care of you here."
   },
