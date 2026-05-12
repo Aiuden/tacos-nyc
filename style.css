@@ -8,15 +8,15 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --cream:       #feefc2;
-  --tan:         #efd484;
-  --orange:      #d54c1c;
-  --brown:       #89633e;
-  --dark-brown:  #5a3e28;
+  --cream:       #f2ede4;
+  --tan:         #e8e2d8;
+  --orange:      #1e4fa8;
+  --brown:       #5a7aaa;
+  --dark-brown:  #0f2d6b;
   --red:         #c00;
-  --white:       #fffdf5;
-  --border:      #c9a84c;
-  --shadow:      rgba(89, 62, 40, 0.18);
+  --white:       #faf8f4;
+  --border:      #9ab0d4;
+  --shadow:      rgba(15, 45, 107, 0.14);
 }
 
 html { scroll-behavior: smooth; }
@@ -87,7 +87,7 @@ a:hover { text-decoration: underline; }
 }
 
 .logo-nyc {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: var(--brown);
 }
 
@@ -430,7 +430,7 @@ td.score-cell {
 .map-popup-name {
   font-weight: 700;
   font-size: 0.95rem;
-  color: #d54c1c;
+  color: #1e4fa8;
   margin-bottom: 2px;
 }
 
@@ -459,7 +459,7 @@ td.score-cell {
 .map-popup-link {
   display: block;
   text-align: center;
-  background: #d54c1c;
+  background: #1e4fa8;
   color: #fff !important;
   padding: 4px 10px;
   border-radius: 3px;

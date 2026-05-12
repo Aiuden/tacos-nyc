@@ -89,11 +89,11 @@ function initMap() {
   const icon = L.divIcon({
     className: '',
     html: `<div style="
-      background:#d54c1c;
+      background:#1e4fa8;
       width:28px;height:28px;
       border-radius:50% 50% 50% 0;
       transform:rotate(-45deg);
-      border:3px solid #5a3e28;
+      border:3px solid #0f2d6b;
       box-shadow:2px 2px 4px rgba(0,0,0,0.3);
     "></div>`,
     iconSize: [28, 28],
