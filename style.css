@@ -254,12 +254,20 @@ td.name-cell .has-note {
   font-size: 0.8rem;
   font-weight: 400;
   font-style: italic;
-  line-height: 1.5;
-  padding: 8px 12px;
+  line-height: 1.55;
+  padding: 10px 14px;
   border-radius: 4px;
-  width: 260px;
+  width: 340px;
   box-shadow: 2px 4px 10px rgba(0,0,0,0.25);
   pointer-events: none;
+}
+
+.note-tooltip p {
+  margin: 0 0 8px 0;
+}
+
+.note-tooltip p:last-child {
+  margin-bottom: 0;
 }
 
 .note-tooltip::before {
@@ -461,9 +469,17 @@ td.score-cell {
   color: #5a7aaa;
   font-style: italic;
   margin-bottom: 8px;
-  line-height: 1.4;
+  line-height: 1.5;
   border-top: 1px solid #d0dff0;
   padding-top: 6px;
+}
+
+.map-popup-notes p {
+  margin: 0 0 6px 0;
+}
+
+.map-popup-notes p:last-child {
+  margin-bottom: 0;
 }
 
 .map-popup-link {

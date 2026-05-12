@@ -1,8 +1,24 @@
 // ===== COMPUTE OVERALL =====
-// Always derive overall from the three scores so it stays in sync
 TACOS.forEach(t => {
-  t.overall = Math.round(((t.taco + t.toppings + t.store) / 3) * 10) / 10;
+  t.overall = Math.round(((t.taco + t.accompaniments + t.experience) / 3) * 10) / 10;
 });
+
+// ===== FORMAT NOTES =====
+// Converts newline-separated paragraphs into HTML.
+// Bolds any "Label:" at the start of a paragraph.
+function formatNotes(text) {
+  if (!text) return '';
+  return text
+    .split(/\n\n+/)
+    .map(p => {
+      const trimmed = p.trim();
+      if (!trimmed) return '';
+      // Bold the "Label:" prefix if present
+      const formatted = trimmed.replace(/^(\w[\w\s]+:)/, '<strong>$1</strong>');
+      return `<p>${formatted}</p>`;
+    })
+    .join('');
+}
 
 // ===== SORT STATE =====
 let sortCol = 'overall';
@@ -31,11 +47,11 @@ function renderTable() {
       <td class="rank-cell">${i + 1}</td>
       <td class="name-cell">
         ${t.mapsUrl ? `<a href="${t.mapsUrl}" target="_blank" rel="noopener" class="${t.notes ? 'has-note' : ''}">${t.name}</a>` : `<span class="${t.notes ? 'has-note' : ''}">${t.name}</span>`}
-        ${t.notes ? `<div class="note-tooltip">${t.notes}</div>` : ''}
+        ${t.notes ? `<div class="note-tooltip">${formatNotes(t.notes)}</div>` : ''}
       </td>
       <td class="score-cell">${scoreChip(t.taco)}</td>
-      <td class="score-cell">${scoreChip(t.toppings)}</td>
-      <td class="score-cell">${scoreChip(t.store)}</td>
+      <td class="score-cell">${scoreChip(t.accompaniments)}</td>
+      <td class="score-cell">${scoreChip(t.experience)}</td>
       <td class="score-cell">${scoreChip(t.overall, 'overall')}</td>
     </tr>
   `).join('');
@@ -118,19 +134,19 @@ function initMap() {
             <span class="map-popup-score-val">${t.taco.toFixed(1)}</span>
           </div>
           <div class="map-popup-score-row">
-            <span class="map-popup-score-label">Toppings</span>
-            <span class="map-popup-score-val">${t.toppings.toFixed(1)}</span>
+            <span class="map-popup-score-label">Accompaniments</span>
+            <span class="map-popup-score-val">${t.accompaniments.toFixed(1)}</span>
           </div>
           <div class="map-popup-score-row">
-            <span class="map-popup-score-label">Store</span>
-            <span class="map-popup-score-val">${t.store.toFixed(1)}</span>
+            <span class="map-popup-score-label">Experience</span>
+            <span class="map-popup-score-val">${t.experience.toFixed(1)}</span>
           </div>
           <div class="map-popup-score-row overall-row">
             <span class="map-popup-score-label"><strong>Overall</strong></span>
             <span class="map-popup-score-val"><strong>${t.overall.toFixed(1)}</strong></span>
           </div>
         </div>
-        ${t.notes ? `<div class="map-popup-notes">${t.notes}</div>` : ''}
+        ${t.notes ? `<div class="map-popup-notes">${formatNotes(t.notes)}</div>` : ''}
         ${t.mapsUrl ? `<a class="map-popup-link" href="${t.mapsUrl}" target="_blank" rel="noopener">Open in Google Maps</a>` : ''}
       </div>`;
     L.marker([t.lat, t.lng], { icon }).addTo(map).bindPopup(popup);
